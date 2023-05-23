@@ -43,7 +43,7 @@ async function run() {
 
     app.get("/totalProducts", async (req, res) => {
       const result = await productCollection.estimatedDocumentCount();
-      res.send({ totalProducts: 121 });
+      res.send({ totalProducts: 76 });
     });
 
     app.post("/productsById", async (req, res) => {
